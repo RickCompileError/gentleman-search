@@ -1,0 +1,105 @@
+:root {
+    --accent: #ffdacc;
+    --primary: #333333;
+    --secondary: #555555;
+    --border-width: 6px;
+    --border-radius: 55px;
+    --font-size: 20px;
+}
+
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    /* background-color: bisque;
+    border: 0.25cm aquamarine solid; */
+    /* width: 700px; */
+    background-color: var(--primary);
+}
+
+.header{
+    text-align: center;
+    color: var(--accent);
+}
+
+.type{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.typeButton{
+    flex-grow: 1;
+    padding: 10px;
+    font-size: var(--font-size);
+    cursor: pointer;
+    background-color: var(--accent);
+    color: var(--primary);
+    border: 2px solid var(--secondary);
+    border-radius: 50px;
+    transition-duration: 0.4s;
+}
+
+.typeButton:hover{
+    background-color: var(--secondary); 
+    color: white;
+}
+
+.videoBoard{
+    display: flex;
+    flex-direction: column;
+}
+
+.comicBoard{
+    display: none;
+    flex-direction: column;
+}
+
+.searchForm{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 10px;
+}
+
+.searchCheckbox{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.searchBar{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.searchBar > input[type=text]{
+    flex-grow: 8;
+    height: 35px;
+    border: 2px solid var(--secondary);
+    font-size: 20px;
+    background-color: var(--accent);
+    background-image: url("../icons/search32x32.png");
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+.searchBar > input[type=button]{
+    flex-grow: 1;
+    background-color: var(--accent);
+    color: black;
+    border: 2px solid var(--secondary);
+    transition-duration: 0.4s;
+}
+
+.searchBar > input[type=button]:hover{
+    background-color: #555555;
+    color: white;
+    cursor: pointer;
+}

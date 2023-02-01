@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="../lib/jquery-3.6.3.min.js"></script>
+    <link rel="icon" href="../icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="popup.css"/>
+    <title>Gentleman Search</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Gentleman Search</h1>
+    </div>
+    <div class="type">
+      <button class="typeButton">Video</button>
+      <button class="typeButton">Comic</button>
+    </div>
+    <div class="videoBoard">
+      <form class="searchForm">
+      <div class="searchCheckbox">
+        <input type="radio" id="video1" name="video" value="1" checked>
+        <label for="video1"><img class="urlIcon" src="../icons/pornhub64x64.png"></label>
+        <input type="radio" id="video2" name="video" value="2">
+        <label for="video2"><img class="urlIcon" src="../icons/xvideos64x64.png"></label>
+        <input type="radio" id="video3" name="video" value="3">
+        <label for="video3"><img class="urlIcon" src="../icons/tktube64x64.png"></label>
+        <input type="radio" id="video4" name="video" value="4">
+        <label for="video4"><img class="urlIcon" src="../icons/jabletv64x64.png"></label><br>
+      </div>
+      </form>
+    </div>
+    <div class="comicBoard">
+      <form class="searchForm">
+      <div class="searchCheckbox">
+        <input type="radio" id="comic1" name="comic" value="5" checked>
+        <label for="comic1"><img class="urlIcon" src="../icons/wnacg64x64.png"></label>
+        <input type="radio" id="comic2" name="comic" value="6">
+        <label for="comic2"><img class="urlIcon" src="../icons/nhentai64x64.png"></label>
+        <input type="radio" id="comic3" name="comic" value="7">
+        <label for="comic3"><img class="urlIcon" src="../icons/comicbox64x64.png"></label>
+        <input type="radio" id="comic4" name="comic" value="8">
+        <label for="comic4"><img class="urlIcon" src="../icons/18comic64x64.png"></label><br>
+      </div>
+      </form>
+    </div>
+    <div class="searchBar">
+      <input type="text" id="url" name="url" placeholder="Search...">
+      <input type="button" value=">>>">
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

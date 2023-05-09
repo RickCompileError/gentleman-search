@@ -20,6 +20,10 @@ let searchUrl = new Map([
     [8, ["https://18comic.vip/search/photos?main_tag=0&search_query=", "https://18comic.vip/album/"]]
 ]);
 
+var incognitoWindow = null;
+
+// prevent any jquery code from running before the document is finished loading
+$(function(){
 $(".typeButton").click(function(event){
     switch (event.target.innerHTML){
         case "Video":
@@ -59,8 +63,6 @@ $(".urlIcon").dblclick(function(){
     createIncognito(websiteUrl.get(parseInt($(":checked:visible").val())));
 });
 
-var incognitoWindow = null;
-
 function createIncognito(url = ""){
     if (url == "")
         url = websiteUrl.get(parseInt($(":checked:visible").val()));
@@ -73,3 +75,4 @@ function createIncognito(url = ""){
         }
     );
 }
+});

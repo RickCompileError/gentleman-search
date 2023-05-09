@@ -3,7 +3,7 @@ let websiteUrl = new Map([
     [2, "https://www.xvideos.com"],
     [3, "https://www.tktube.com/"],
     [4, "https://jable.tv/"],
-    [5, "http://www.wnacg.org/"],
+    [5, "https://www.wnacg.com/"],
     [6, "https://nhentai.net/"],
     [7, "https://www.comicbox.xyz/"],
     [8, "https://18comic.vip/"],
@@ -14,7 +14,7 @@ let searchUrl = new Map([
     [2, "https://www.xvideos.com/?k="],
     [3, "https://tktube.com/search/"],
     [4, "https://jable.tv/search/"],
-    [5, ["https://www.wnacg.org/search/?q=", "https://www.wnacg.org/photos-index-aid-"]],
+    [5, ["https://www.wnacg.com/search/?q=", "https://www.wnacg.com/photos-index-aid-"]],
     [6, ["https://nhentai.net/search/?q=", "https://nhentai.net/g/"]],
     [7, ["https://www.comicbox.xyz/search?keyword=", "https://www.comicbox.xyz/book/"]],
     [8, ["https://18comic.vip/search/photos?main_tag=0&search_query=", "https://18comic.vip/album/"]]

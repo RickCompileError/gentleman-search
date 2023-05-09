@@ -37,9 +37,9 @@ $(".typeButton").click(function(event){
             $(":text").attr("placeholder", "Search... (number or text)");
             break;
     }   
-})
+});
 
-$(".searchBar > :button").click(function(){
+function searchTrigger(){
     let userInput = $(":text:visible").val();
     let selectVal = parseInt($(":checked:visible").val());
     let url = "";
@@ -57,11 +57,7 @@ $(".searchBar > :button").click(function(){
     }
     createIncognito(url);
     $(":text").val("");
-});
-
-$(".urlIcon").dblclick(function(){
-    createIncognito(websiteUrl.get(parseInt($(":checked:visible").val())));
-});
+}
 
 function createIncognito(url = ""){
     if (url == "")
@@ -75,4 +71,19 @@ function createIncognito(url = ""){
         }
     );
 }
+
+$(".searchBar > :text").keypress(function(event){
+    if (event.which == 13){
+        searchTrigger();
+    }
+});
+
+$(".searchBar > :button").click(function(){
+    searchTrigger();
+});
+
+$(".urlIcon").dblclick(function(){
+    createIncognito(websiteUrl.get(parseInt($(":checked:visible").val())));
+});
+
 });

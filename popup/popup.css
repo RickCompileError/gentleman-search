@@ -80,14 +80,12 @@ html, body{
 }
 
 .searchBar > input[type=text]{
-    flex-grow: 8;
+    flex-grow: 2;
     height: 35px;
     border: 2px solid var(--secondary);
     font-size: 20px;
     background-color: var(--accent);
-    background-image: url("../icons/search32x32.png");
-    background-repeat: no-repeat;
-    padding-left: 40px;
+    padding-left: 10px;
 }
 
 .searchBar > input[type=button]{
@@ -95,6 +93,9 @@ html, body{
     background-color: var(--accent);
     color: black;
     border: 2px solid var(--secondary);
+    background-image: url("../icons/search-black24x24.png");
+    background-repeat: no-repeat;
+    background-position: center;
     transition-duration: 0.4s;
 }
 
@@ -102,4 +103,5 @@ html, body{
     background-color: #555555;
     color: white;
     cursor: pointer;
+    background-image: url("../icons/search-white24x24.png");
 }

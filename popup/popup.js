@@ -62,14 +62,36 @@ function searchTrigger(){
 function createIncognito(url = ""){
     if (url == "")
         url = websiteUrl.get(parseInt($(":checked:visible").val()));
-    
-    chrome.windows.create(
-        {
-            "url": url,
-            "incognito": true,
-            "state": "maximized",
+
+    // find incognito window
+    chrome.windows.getAll().then((windows) => {
+        let incognitoWindow = null;
+        for (let i = 0; i < windows.length; i++) {
+            if (windows[i].incognito === true) {
+                console.log("exist");
+                incognitoWindow = windows[i];
+                break;
+            }
         }
-    );
+        // if not exist, create one
+        if (incognitoWindow === null) {
+            chrome.windows.create(
+                {
+                    "url": url,
+                    "incognito": true,
+                    "state": "maximized",
+                }
+            );
+        // if exist, just create on current window
+        } else {
+            chrome.tabs.create(
+                {
+                    "url": url,
+                    "windowId": incognitoWindow.id
+                }
+            );
+        }
+    });
 }
 
 $(".searchBar > :text").keypress(function(event){

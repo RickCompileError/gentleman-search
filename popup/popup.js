@@ -1,22 +1,22 @@
 let websiteUrl = new Map([
-    [1, "https://cn.pornhub.com/"],
-    [2, "https://www.xvideos.com"],
+    [1, "https://www.netflav.com/"],
+    [2, "https://hanime1.me/"],
     [3, "https://www.tktube.com/"],
     [4, "https://jable.tv/"],
     [5, "https://www.wnacg.com/"],
     [6, "https://nhentai.net/"],
-    [7, "https://www.comicbox.xyz/"],
+    [7, "https://www.ho5ho.com/"],
     [8, "https://18comic.vip/"],
 ]);
 
 let searchUrl = new Map([
-    [1, "https://cn.pornhub.com/video/search?search="],
-    [2, "https://www.xvideos.com/?k="],
+    [1, "https://www.netflav.com/search?type=title&keyword="],
+    [2, "https://hanime1.me/search?query="],
     [3, "https://tktube.com/search/"],
     [4, "https://jable.tv/search/"],
     [5, ["https://www.wnacg.com/search/?q=", "https://www.wnacg.com/photos-index-aid-"]],
     [6, ["https://nhentai.net/search/?q=", "https://nhentai.net/g/"]],
-    [7, ["https://www.comicbox.xyz/search?keyword=", "https://www.comicbox.xyz/book/"]],
+    [7, ["https://www.ho5ho.com/?s="]],
     [8, ["https://18comic.vip/search/photos?main_tag=0&search_query=", "https://18comic.vip/album/"]]
 ]);
 
